@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+html, body {
+    height: 200px;
+    margin: 0;
+    background-color: #1C1C1C; 
+}
+
+.container{
+    height: 70%;
+    margin: 0;
+    margin-top: 20%;
+    margin-top: 20%; 
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #1C1C1C; /
+
+
+    
+}
+.biggerBox {
+    width: 550px;
+height: 550px;
+top: 64px;
+left: 62px;
+gap: 0px;
+opacity: 0px;
+background: #1F2937;
+align-self: center;;
+
+/* padding-top: 64px; 
+padding-right:30px; 
+padding-bottom:64px;
+padding-left:62px; */
+
+}
+
+
+
+.heading1{
+    /*layout*/
+    width: 354px;
+height: 80px;
+top: 115px;
+left: 52px;
+gap: 0px;
+opacity: 0px;
+
+/*Padding*/
+padding-top: 115px; 
+padding-right:144px; 
+padding-bottom:355px;
+padding-left:52px;
+
+font-family: Karla;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: -0.025em;
+text-align: left;
+
+}
+
+.subhead1{
+    /* Layout */
+    width: 372px;
+    height: 28px;
+    top: 205px;
+    left: 52px;
+    gap: 0px;
+    opacity: 0px;
+    color: #D5D4D8;
+
+    
+
+/* Font */
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+
+/* Color */
+color: #D5D4D8;
+
+padding-top: 10px;
+}
+
+#genPass{
+    
+    /* width: Hug (191px)px;
+    height: Hug (42px)px;
+    top: 284px;
+    left: 52px;
+    padding: 9px 17px 9px 15px;
+    gap: 12px;
+    border-radius: 6px 6px 6px 6px;
+    opacity: 0px;
+    margin-top: 60px; */
+    
+    /* Color */
+    /* background-color: #10B981; */
+
+    /* box-shadow: 0px 1px 2px 0px #0000000D; */
+
+    /* font-family: Karla;
+color: #FFFFFF;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left; */
+/* box-shadow: none; */
+}
+
+.line{
+    width: 446px;
+height: 0px;
+top: 361px;
+left: 52px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+angle: -0 deg;
+
+border: 1px solid #2F3E53
+}
+
+.resultContainer{
+    display: flex;
+    gap: 24px;
+    width: 456px;
+}
+
+#result1{
+    width: 211px;
+height: 39px;
+top: 396px;
+left: 52px;
+gap: 0px;
+border-radius: 6px 6px 6px 6px;
+opacity: 0px;
+display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+/* color */
+background: #273549;
+
+/* Font */
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+color: #55F991;
+
+}
+
+#result2{
+    width: 211px;
+    height: 39px;
+    top: 396px;
+    left: 52px;
+    gap: 0px;
+    border-radius: 6px 6px 6px 6px;
+    opacity: 0px;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    /* color */
+    background: #273549;
+
+    /* Font */
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+color: #55F991;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>GLOW BUTTON CSS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.glow-button{
+            position:sticky;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px 0;
+            color: #10B981;
+            text-decoration:none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            overflow: hidden;
+            
+        }
+        .glow-button:hover{
+            background: #03e9f4;
+            color: #050801;
+            box-shadow:  0 0 5px #059669,
+            0 0 25px #10B981,
+            0 0 50px #34D399,
+            0 0 200px #6EE7B7;
+
+                        
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+        .glow-button span{
+            position: absolute;
+            display: block;
+        }
+        .glow-button span:nth-child(1){
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,transparent,#03e9f4);
+            animation: animate1 1s linear infinite;
+        }
+        @keyframes animate1{
+            0%{
+                left: -100%;
+            }
+            50%,100%{
+                left: 100%;
+            }
+        }
+        .glow-button span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,#03e9f4);
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+        @keyframes animate2{
+            0%{
+                top: -100%;
+            }
+            50%,100%{
+                top: 100%;
+            }
+        }
+        .glow-button span:nth-child(3){
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg,transparent,#03e9f4);
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.50s;
+        }
+        @keyframes animate3{
+            0%{
+                right: -100%;
+            }
+            50%,100%{
+                right: 100%;
+            }
+        }
+        .glow-button span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,#03e9f4);
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        @keyframes animate4{
+            0%{
+                bottom: -100%;
+            }
+            50%,100%{
+                bottom: 100%;
+            }
+        }
+
+
+        /* RESULT PASSWORD BUTTON ANNIMATION */
+        .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button1 {
+            min-width: 250px;
+            min-height: 60px;
+            display: inline-flex;
+            /* font-family: 'Nunito', sans-serif; */
+            font-size: 15px;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #313133;
+            background: #4FD1C5;
+            background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+            border: none;
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            padding: 10px;
+        }
+
+        .button1::before {
+            content: '';
+            border-radius: 1000px;
+            min-width: calc(300px + 12px);
+            min-height: calc(60px + 12px);
+            border: 6px solid #00FFCB;
+            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+        }
+
+        .button1:hover,
+        .button1:focus {
+            color: #313133;
+            transform: translateY(-6px);
+        }
+
+        .button1:hover::before,
+        .button1:focus::before {
+            opacity: 1;
+        }
+
+        .button1::after {
+            content: '';
+            width: 30px; 
+            height: 30px;
+            border-radius: 100%;
+            border: 6px solid #00FFCB;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+        }
+
+        .button1:hover::after,
+        .button1:focus::after {
+            animation: none;
+            display: none;
+        }
+
+        @keyframes ring {
+            position: relative;
+            0% {
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+            100% {
+                width: 200px;
+                height: 250px;
+                opacity: 1;
+            }
+        }
